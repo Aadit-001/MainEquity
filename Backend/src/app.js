@@ -7,6 +7,7 @@ const app = express()
 //cors use karte hai taki pata rahe konse frontend ke url se backend reply dega
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
+    methods:['GET','POST','PUT','DELETE'],
     credentials: true
 }))
 
